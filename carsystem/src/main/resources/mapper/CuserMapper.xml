@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carsystem.dao.CuserMapper">
+  <resultMap id="BaseResultMap" type="com.carsystem.entity.Cuser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="c_id" jdbcType="INTEGER" property="cId" />
+    <result column="c_name" jdbcType="VARCHAR" property="cName" />
+    <result column="c_password" jdbcType="VARCHAR" property="cPassword" />
+    <result column="c_telnumber" jdbcType="VARCHAR" property="cTelnumber" />
+    <result column="c_birthdate" jdbcType="DATE" property="cBirthdate" />
+    <result column="c_idnumber" jdbcType="VARCHAR" property="cIdnumber" />
+    <result column="c_idtype" jdbcType="VARCHAR" property="cIdtype" />
+    <result column="c_cartype" jdbcType="VARCHAR" property="cCartype" />
+    <result column="c_email" jdbcType="VARCHAR" property="cEmail" />
+    <result column="c_address" jdbcType="VARCHAR" property="cAddress" />
+  </resultMap>
+  <select id="login" resultMap="BaseResultMap">
+  select * from cuser where c_telnumber=#{c_telnumber} and c_password=#{c_password}
+  </select>
+  <select id="exittelnumber" resultType="java.lang.Integer" parameterType="java.lang.String">
+  select count(c_telnumber) from cuser where c_telnumber=#{c_telnumber}
+  </select>
+</mapper>

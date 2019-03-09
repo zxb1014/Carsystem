@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carsystem.dao.HistoryMapper">
+  <resultMap id="BaseResultMap" type="com.carsystem.entity.History">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="h_id" jdbcType="INTEGER" property="hId" />
+    <result column="h_number" jdbcType="VARCHAR" property="hNumber" />
+    <result column="a_applynumber" jdbcType="VARCHAR" property="aApplynumber" />
+    <result column="h_fk" jdbcType="VARCHAR" property="hFk" />
+  </resultMap>
+</mapper>

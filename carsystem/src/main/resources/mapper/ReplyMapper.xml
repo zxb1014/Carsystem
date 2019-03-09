@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carsystem.dao.ReplyMapper">
+  <resultMap id="BaseResultMap" type="com.carsystem.entity.Reply">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="reply_id" jdbcType="INTEGER" property="replyId" />
+    <result column="reply_fk" jdbcType="VARCHAR" property="replyFk" />
+    <result column="reply_text" jdbcType="LONGVARCHAR" property="replyText" />
+  </resultMap>
+</mapper>

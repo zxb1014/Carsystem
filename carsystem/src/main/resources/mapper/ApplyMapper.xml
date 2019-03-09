@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carsystem.dao.ApplyMapper">
+  <resultMap id="BaseResultMap" type="com.carsystem.entity.Apply">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="a_id" jdbcType="INTEGER" property="aId" />
+    <result column="a_applynumber" jdbcType="VARCHAR" property="aApplynumber" />
+    <result column="c_state" jdbcType="VARCHAR" property="cState" />
+    <result column="s_state" jdbcType="VARCHAR" property="sState" />
+    <result column="c_result" jdbcType="VARCHAR" property="cResult" />
+    <result column="a_fk" jdbcType="VARCHAR" property="aFk" />
+  </resultMap>
+</mapper>
